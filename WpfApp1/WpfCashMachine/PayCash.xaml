@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfCashMachine.PayCash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCashMachine"
+        mc:Ignorable="d"
+        Title="PayCash" Height="200" Width="200" Activated="Window_Activated">
+    <Grid>
+        <StackPanel Background="BlueViolet">
+            <TextBlock x:Name="txtSum" Margin="5">Yhteensä:</TextBlock>
+            <TextBlock Margin="5">Saatu:</TextBlock>
+            <TextBox x:Name="txtCash" Margin="5" TextChanged="TxtCash_TextChanged"></TextBox>
+            <TextBlock x:Name="txtChange" Margin="5">Takaisin:</TextBlock>
+            <Button x:Name="btnPaid" Margin="5" Click="BtnPaid_Click">Maksettu</Button>
+        </StackPanel>
+    </Grid>
+</Window>

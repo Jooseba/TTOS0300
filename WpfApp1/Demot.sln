@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayer", "WpfApp1\Medi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPwdCheck", "WpfPwdCheck\WpfPwdCheck.csproj", "{39AA0FC5-B9B9-4FDA-B84C-3E671BCFBCA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCashMachine", "WpfCashMachine\WpfCashMachine.csproj", "{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39AA0FC5-B9B9-4FDA-B84C-3E671BCFBCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39AA0FC5-B9B9-4FDA-B84C-3E671BCFBCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39AA0FC5-B9B9-4FDA-B84C-3E671BCFBCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
