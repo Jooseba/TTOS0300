@@ -8,10 +8,11 @@
         Title="BEST AUDIOBLAYER" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnPlay_Click"/>
-        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnStop_Click"/>
-        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="337,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.535,-2.16"/>
-        <TextBox x:Name="txtFilename" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="D:\Musics\track.mp3" VerticalAlignment="Top" Width="322"/>
-        <MediaElement x:Name="medElement" HorizontalAlignment="Left" Height="346" Margin="10,63,0,0" VerticalAlignment="Top" Width="640"/>
+        <Button x:Name="btnPause" Content="Pause" HorizontalAlignment="Left" Margin="90,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnPause_Click" IsEnabled="False"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="170,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnStop_Click" IsEnabled="False"/>
+        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="337,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.535,-2.16" Click="BtnBrowse_Click"/>
+        <TextBox x:Name="txtFilename" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="D:\Herkut\testi.mp3" VerticalAlignment="Top" Width="322"/>
+        <MediaElement x:Name="medElement" HorizontalAlignment="Left" Height="346" Margin="10,63,0,0" VerticalAlignment="Top" Width="640" LoadedBehavior="Manual"/>
 
     </Grid>
 </Window>
