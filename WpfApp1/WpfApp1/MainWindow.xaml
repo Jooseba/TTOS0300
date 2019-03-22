@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="BEST AUDIOBLAYER" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnPlay_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,38,0,0" VerticalAlignment="Top" Width="75" Click="BtnStop_Click"/>
+        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="337,13,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.535,-2.16"/>
+        <TextBox x:Name="txtFilename" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="D:\Musics\track.mp3" VerticalAlignment="Top" Width="322"/>
+        <MediaElement x:Name="medElement" HorizontalAlignment="Left" Height="346" Margin="10,63,0,0" VerticalAlignment="Top" Width="640"/>
+
+    </Grid>
+</Window>
