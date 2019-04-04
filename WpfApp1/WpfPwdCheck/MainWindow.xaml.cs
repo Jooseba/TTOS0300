@@ -20,29 +20,69 @@ namespace WpfPwdCheck
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
             InitializeComponent();
-        }
+        } 
 
         private void PsbPassword_PasswordChanged(object sender, RoutedEventArgs e)
         {
             //show count of different kind of marks
+            int cntDiffer = 0;
+
             int cntTotal = psbPassword.Password.Length;
+
+            int cntUpperLetters = psbPassword.Password.Count(char.IsUpper);
+            int cntLowerLetters = psbPassword.Password.Count(char.IsLower);
+            int cntDigits = psbPassword.Password.Count(char.IsDigit);
+            int cntSpecialmarks = psbPassword.Password.Count(x => !Char.IsLetterOrDigit(x));
+            if (cntLowerLetters > 0)
+            {
+                cntDiffer++;
+            }
+            if (cntUpperLetters > 0)
+            {
+                cntDiffer++;
+            }
+            if (cntDigits > 0)
+            {
+                cntDiffer++;
+            }
+            if (cntSpecialmarks > 0)
+            {
+                cntDiffer++;
+            }
             txtTotal.Text = "Merkkejä: " + cntTotal;
+
+            txtUpper.Text = $"Isojakirjamia: {cntUpperLetters}";
+            txtLower.Text = $"Pieniäkirjaimia: {cntLowerLetters}";
+            txtNumber.Text= $"Numeroita: {cntDigits}";
+            txtSpecial.Text = $"Erikoismerkkejä: {cntSpecialmarks}";
 
             //change label color and text
             string msg;
             Color color;
-            if (cntTotal > 15)
+            if (cntTotal > 15 && cntDiffer == 4)
             {
                 msg = "Salasana on vahva";
                 color = Colors.Green;
             }
-            else if (cntTotal > 8)
+            else if (cntTotal < 16 && cntDiffer >= 3)
+            {
+                msg = "Salasana on ok";
+                color = Colors.PowderBlue;
+            }
+            else if (cntTotal < 12 && cntDiffer >= 2)
             {
                 msg = "Salasana on välttävä";
                 color = Colors.Yellow;
+            }
+            else if (cntTotal < 8 && cntDiffer >= 1)
+            {
+                msg = "Salasana on huono";
+                color = Colors.Red;
             }
             else
             {
