@@ -42,10 +42,8 @@ namespace WpfCashMachine
         {
             //count change amount
             float money = 0;
-            if (float.TryParse(txtSum.Text, out money))
-            {
-                txtChange.Text = "Takaisin: " + (money - Mount).ToString("C");
-            }
+            float.TryParse(txtSum.Text, out money);
+            txtChange.Text = "Takaisin: " + (money - Mount).ToString("C");
         }
     }
 }
