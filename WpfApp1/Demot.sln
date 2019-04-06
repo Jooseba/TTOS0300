@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPlayer", "WpfApp1\MediaPlayer.csproj", "{B3B13099-F17D-4857-8168-0E4425D08B94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPwdCheck", "WpfPwdCheck\WpfPwdCheck.csproj", "{39AA0FC5-B9B9-4FDA-B84C-3E671BCFBCA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCashMachine", "WpfCashMachine\WpfCashMachine.csproj", "{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBind", "DataBind\DataBind.csproj", "{9EF9656E-04BC-47E9-BFF3-B10BF353FC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAutotalli", "WpfAutotalli\WpfAutotalli.csproj", "{35A7F5D5-410A-44C2-8B56-12EA6F4CCDAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A62CFC30-753B-4A89-B3B7-8ECC66C2472B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF9656E-04BC-47E9-BFF3-B10BF353FC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF9656E-04BC-47E9-BFF3-B10BF353FC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF9656E-04BC-47E9-BFF3-B10BF353FC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF9656E-04BC-47E9-BFF3-B10BF353FC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A7F5D5-410A-44C2-8B56-12EA6F4CCDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A7F5D5-410A-44C2-8B56-12EA6F4CCDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A7F5D5-410A-44C2-8B56-12EA6F4CCDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A7F5D5-410A-44C2-8B56-12EA6F4CCDAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
